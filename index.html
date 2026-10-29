@@ -3,22 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>리센느 뮤직웨이브</title>
+<meta name="theme-color" content="#15965c">
+<meta name="application-name" content="RESCENE WAVE">
+<link rel="manifest" href="./manifest.webmanifest">
+<title>RESCENE WAVE 바로가기</title>
 <style>
-body{margin:0;background:#eaf8ee;font-family:sans-serif;text-align:center;color:#176b43}
-main{padding:70px 20px}
+body{margin:0;background:#eaf8ee;color:#176b43;font-family:sans-serif;text-align:center}
+main{max-width:420px;margin:0 auto;padding:70px 20px}
 h1{font-size:28px}
-a{display:block;background:#15965c;color:white;padding:18px;border-radius:15px;text-decoration:none;font-weight:bold;margin-top:35px}
+a{display:block;background:#15965c;color:white;padding:18px;border-radius:15px;text-decoration:none;font-weight:bold;margin:30px 0}
+p{line-height:1.7}
 </style>
 </head>
 <body>
 <main>
 <h1>💚 RESCENE WAVE</h1>
 <p>리센느 뮤직웨이브 바로가기</p>
-<a href="https://into.melon.com/bridge/kakaotalk/musicwave/i4U-3S3gKk-7T3AbMmeaSw?type=channel&amp;t=1793277937046">💚 뮤직웨이브 입장하기</a>
+<a id="enter" href="https://into.melon.com/bridge/kakaotalk/musicwave/i4U-3S3gKk-7T3AbMmeaSw?type=channel&amp;t=1793277937046">💚 뮤직웨이브 입장하기</a>
+<p>홈 화면에 추가해 편리하게 이용하세요!</p>
 </main>
 <script>
-if(location.search.includes("go"))location.replace(document.querySelector("a").href);
+const target=document.getElementById("enter").href;
+if(new URLSearchParams(location.search).has("go")){
+location.replace(target);
+}
 </script>
 </body>
 </html>
