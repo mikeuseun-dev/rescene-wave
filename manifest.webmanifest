@@ -1,0 +1,11 @@
+{
+  "name": "RESCENE WAVE - 리센느 뮤직웨이브",
+  "short_name": "RESCENE WAVE",
+  "description": "리센느 뮤직웨이브 바로가기",
+  "start_url": "./?go",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eaf8ee",
+  "theme_color": "#15965c",
+  "icons": []
+}
