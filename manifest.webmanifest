@@ -8,7 +8,7 @@
   "background_color": "#eaf8ee",
   "theme_color": "#15965c",
   
-"Icons": [
+"icons": [
   {
     "src": "./Icon.png",
     "sizes": "512x512",
